@@ -25,6 +25,7 @@ public class Subscriber extends SubscriberModel {
 
     @Override
     public void task(String json) {
+        //Todo:Have an object mapper to add string into Json
         service.makeHttpCall(endPoint, new RequestModel(json));
     }
 }
